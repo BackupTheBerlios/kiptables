@@ -1,0 +1,27 @@
+<!DOCTYPE kpartgui>
+<kpartgui name="kiptables">
+<MenuBar>
+	<Menu name="file"><text>&amp;File</text>
+		<Action name="quit"/>
+	</Menu>
+	<Menu name="firewall"><text>F&amp;irewall</text>
+		<Action name="fw_add_host"/>
+		<Action name="fw_modify_host"/>
+		<Action name="fw_delete_host"/>
+		<Separator/>
+		<Action name="fw_add_network"/>
+		<Action name="fw_modify_network"/>
+		<Action name="fw_delete_network"/>
+		<Separator/>
+		<Action name="fw_add_tcp_port"/>
+		<Separator/>
+		<Action name="fw_add_udp_port"/>
+	</Menu>
+	<Menu name="configuration"><text>&amp;Configuration</text>
+	<Action name="conf_settings"/>
+	</Menu>
+</MenuBar>
+<StatusBar>
+	<Action name="conf_settings"/>
+</StatusBar>
+</kpartgui>

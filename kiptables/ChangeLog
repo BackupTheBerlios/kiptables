@@ -1,0 +1,9 @@
+2001-11-22  Stephan Hermann  <sh@sourcecode.de>
+
+	* Added TCP/UDP Dialogs
+	* Added ChangeDialogs and Actions for host/network/tcp/udp
+	* Added new KActions to host/network/tcp/udp
+	* Changed several things in kiptablesui.rc
+	* Fixed bug in doublick item in Configuration List
+
+

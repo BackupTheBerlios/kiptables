@@ -1,0 +1,722 @@
+# KDE tags expanded automatically by am_edit - $Revision: 1.1 $ 
+# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+####### kdevelop will overwrite this part!!! (begin)##########
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+#>- 
+bindir = @bindir@
+#>+ 3
+DEPDIR = .deps
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUTODIRS = @AUTODIRS@
+CC = @CC@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DLLTOOL = @DLLTOOL@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+EXEEXT = @EXEEXT@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KDECONFIG = @KDECONFIG@
+KDE_CXXFLAGS = @KDE_CXXFLAGS@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTIL = @LIBUTIL@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KFORMULA = @LIB_KFORMULA@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_KWRITE = @LIB_KWRITE@
+LIB_QT = @LIB_QT@
+LIB_SMB = @LIB_SMB@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+REPO = @REPO@
+SETUIDFLAGS = @SETUIDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+idldir = @idldir@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+micodir = @micodir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+INCLUDES = $(all_includes)
+
+#>- libGUI_a_METASOURCES = AUTO
+
+noinst_LIBRARIES = libGUI.a
+
+#>- libGUI_a_SOURCES = kiptablesudpport.cpp kiptablesudpportui.ui kiptablestcpportui.ui kiptablestcpport.cpp kiptablesaddnetwork.cpp kiptablesaddnetworkui.ui kiptablesaddhost.cpp kiptablesaddhostui.ui kiptablessettings.cpp kiptablessettgingsui.ui kiptablesmainui.ui kiptablesmain.cpp 
+#>+ 1
+libGUI_a_SOURCES=kiptablesudpport.cpp   kiptablestcpport.cpp kiptablesaddnetwork.cpp  kiptablesaddhost.cpp  kiptablessettings.cpp   kiptablesmain.cpp  kiptablesudpportui.cpp kiptablestcpportui.cpp kiptablesaddnetworkui.cpp kiptablesaddhostui.cpp kiptablessettgingsui.cpp kiptablesmainui.cpp
+
+EXTRA_DIST = kiptablesmain.cpp kiptablesmain.h kiptablesmainui.h kiptablesmainui.ui kiptablessettgingsui.ui kiptablessettings.cpp kiptablessettings.h kiptablesaddhostui.ui kiptablesaddhost.cpp kiptablesaddhost.h kiptablesaddnetworkui.ui kiptablesaddnetwork.cpp kiptablesaddnetwork.h kiptablestcpport.cpp kiptablestcpport.h kiptablestcpportui.ui kiptablesudpportui.ui kiptablesudpport.cpp kiptablesudpport.h 
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../config.h
+CONFIG_CLEAN_FILES = 
+LIBRARIES =  $(noinst_LIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libGUI_a_LIBADD = 
+#>- libGUI_a_OBJECTS =  kiptablesudpport.$(OBJEXT) \
+#>- kiptablestcpport.$(OBJEXT) kiptablesaddnetwork.$(OBJEXT) \
+#>- kiptablesaddhost.$(OBJEXT) kiptablessettings.$(OBJEXT) \
+#>- kiptablesmain.$(OBJEXT)
+#>+ 9
+libGUI_a_final_OBJECTS = libGUI_a.all_cpp.o 
+libGUI_a_nofinal_OBJECTS = kiptablesudpport.$(OBJEXT) \
+kiptablestcpport.$(OBJEXT) kiptablesaddnetwork.$(OBJEXT) \
+kiptablesaddhost.$(OBJEXT) kiptablessettings.$(OBJEXT) \
+kiptablesmain.$(OBJEXT)\
+kiptablesudpport.moc.o kiptablesaddnetwork.moc.o kiptablessettings.moc.o kiptablesaddhost.moc.o kiptablestcpport.moc.o kiptablestcpports.moc.o kiptablesmain.moc.o  kiptablesudpportui.$(OBJEXT) kiptablestcpportui.$(OBJEXT) kiptablesaddnetworkui.$(OBJEXT) kiptablesaddhostui.$(OBJEXT) kiptablessettgingsui.$(OBJEXT) kiptablesmainui.$(OBJEXT) \
+libGUI_a_meta_unload.o 
+@KDE_USE_FINAL_FALSE@libGUI_a_OBJECTS = $(libGUI_a_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@libGUI_a_OBJECTS = $(libGUI_a_final_OBJECTS)
+AR = ar
+CXXFLAGS = @CXXFLAGS@
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 1
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+#>+ 1
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) $(LDFLAGS) -o $@
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+#>- DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=kiptablestcpports.h 
+
+DISTFILES= $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+TAR = gtar
+GZIP_ENV = --best
+#>- DEP_FILES =  .deps/kiptablesaddhost.P .deps/kiptablesaddnetwork.P \
+#>- .deps/kiptablesmain.P .deps/kiptablessettings.P \
+#>- .deps/kiptablestcpport.P .deps/kiptablesudpport.P
+#>+ 8
+@KDE_USE_FINAL_TRUE@DEP_FILES =  $(DEPDIR)/kiptablesudpport.moc.P $(DEPDIR)/kiptablesaddnetwork.moc.P $(DEPDIR)/kiptablessettings.moc.P $(DEPDIR)/kiptablesaddhost.moc.P $(DEPDIR)/kiptablestcpport.moc.P $(DEPDIR)/kiptablestcpports.moc.P $(DEPDIR)/kiptablesmain.moc.P $(DEPDIR)/kiptablesudpportui.P $(DEPDIR)/kiptablestcpportui.P $(DEPDIR)/kiptablesaddnetworkui.P $(DEPDIR)/kiptablesaddhostui.P $(DEPDIR)/kiptablessettgingsui.P $(DEPDIR)/kiptablesmainui.P $(DEPDIR)/libGUI_a_meta_unload.P  $(DEPDIR)/libGUI_a.all_cpp.P \
+	  .deps/kiptablesaddhost.P .deps/kiptablesaddnetwork.P \
+.deps/kiptablesmain.P .deps/kiptablessettings.P \
+.deps/kiptablestcpport.P .deps/kiptablesudpport.P
+@KDE_USE_FINAL_FALSE@DEP_FILES =  $(DEPDIR)/kiptablesudpport.moc.P $(DEPDIR)/kiptablesaddnetwork.moc.P $(DEPDIR)/kiptablessettings.moc.P $(DEPDIR)/kiptablesaddhost.moc.P $(DEPDIR)/kiptablestcpport.moc.P $(DEPDIR)/kiptablestcpports.moc.P $(DEPDIR)/kiptablesmain.moc.P $(DEPDIR)/kiptablesudpportui.P $(DEPDIR)/kiptablestcpportui.P $(DEPDIR)/kiptablesaddnetworkui.P $(DEPDIR)/kiptablesaddhostui.P $(DEPDIR)/kiptablessettgingsui.P $(DEPDIR)/kiptablesmainui.P $(DEPDIR)/libGUI_a_meta_unload.P   .deps/kiptablesaddhost.P .deps/kiptablesaddnetwork.P \
+.deps/kiptablesmain.P .deps/kiptablessettings.P \
+.deps/kiptablestcpport.P .deps/kiptablesudpport.P
+
+SOURCES = $(libGUI_a_SOURCES)
+OBJECTS = $(libGUI_a_OBJECTS)
+
+#>- all: all-redirect
+#>+ 1
+all: docs-am  all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .obj .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+#>- 	cd $(top_srcdir) && $(AUTOMAKE) --gnu kiptables/GUI/Makefile
+#>+ 2
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu kiptables/GUI/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kiptables/GUI/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status $(BUILT_SOURCES)
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-noinstLIBRARIES:
+
+clean-noinstLIBRARIES:
+	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
+
+distclean-noinstLIBRARIES:
+
+maintainer-clean-noinstLIBRARIES:
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libGUI.a: $(libGUI_a_OBJECTS) $(libGUI_a_DEPENDENCIES)
+	-rm -f libGUI.a
+	$(AR) cru libGUI.a $(libGUI_a_OBJECTS) $(libGUI_a_LIBADD)
+	$(RANLIB) libGUI.a
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.obj:
+	$(CXXCOMPILE) -c `cygpath -w $<`
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kiptables/GUI
+
+distdir: $(DISTFILES)
+	here=`cd $(top_builddir) && pwd`; \
+	top_distdir=`cd $(top_distdir) && pwd`; \
+	distdir=`cd $(distdir) && pwd`; \
+	cd $(top_srcdir) \
+	  && $(AUTOMAKE) --include-deps --build-dir=$$here --srcdir-name=$(top_srcdir) --output-dir=$$top_distdir --gnu kiptables/GUI/Makefile
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+
+DEPS_MAGIC := $(shell mkdir .deps > /dev/null 2>&1 || :)
+
+-include $(DEP_FILES)
+
+mostlyclean-depend:
+
+clean-depend:
+
+distclean-depend:
+	-rm -rf .deps
+
+maintainer-clean-depend:
+
+%.o: %.c
+	@echo '$(COMPILE) -c $<'; \
+	$(COMPILE) -Wp,-MD,.deps/$(*F).pp -c $<
+	@-cp .deps/$(*F).pp .deps/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*F).P; \
+	rm .deps/$(*F).pp
+
+%.lo: %.c
+	@echo '$(LTCOMPILE) -c $<'; \
+	$(LTCOMPILE) -Wp,-MD,.deps/$(*F).pp -c $<
+	@-sed -e 's/^\([^:]*\)\.o[ 	]*:/\1.lo \1.o :/' \
+	  < .deps/$(*F).pp > .deps/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*F).P; \
+	rm -f .deps/$(*F).pp
+
+%.o: %.cpp
+	@echo '$(CXXCOMPILE) -c $<'; \
+	$(CXXCOMPILE) -Wp,-MD,.deps/$(*F).pp -c $<
+	@-cp .deps/$(*F).pp .deps/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*F).P; \
+	rm .deps/$(*F).pp
+
+%.lo: %.cpp
+	@echo '$(LTCXXCOMPILE) -c $<'; \
+	$(LTCXXCOMPILE) -Wp,-MD,.deps/$(*F).pp -c $<
+	@-sed -e 's/^\([^:]*\)\.o[ 	]*:/\1.lo \1.o :/' \
+	  < .deps/$(*F).pp > .deps/$(*F).P; \
+	tr ' ' '\012' < .deps/$(*F).pp \
+	  | sed -e 's/^\\$$//' -e '/^$$/ d' -e '/:$$/ d' -e 's/$$/ :/' \
+	    >> .deps/$(*F).P; \
+	rm -f .deps/$(*F).pp
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am:
+install-exec: install-exec-am
+
+install-data-am:
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am:
+uninstall: uninstall-am
+all-am: Makefile $(LIBRARIES)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-noinstLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags mostlyclean-depend \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+#>- clean-am:  clean-noinstLIBRARIES clean-compile clean-libtool clean-tags \
+#>- 		clean-depend clean-generic mostlyclean-am
+#>+ 2
+clean-am: clean-metasources clean-ui clean-moc-classes clean-final   clean-noinstLIBRARIES clean-compile clean-libtool clean-tags \
+		clean-depend clean-generic mostlyclean-am
+
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+distclean-am:  distclean-noinstLIBRARIES distclean-compile \
+		distclean-libtool distclean-tags distclean-depend \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-noinstLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-depend \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-noinstLIBRARIES distclean-noinstLIBRARIES \
+clean-noinstLIBRARIES maintainer-clean-noinstLIBRARIES \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool tags mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir \
+mostlyclean-depend distclean-depend clean-depend \
+maintainer-clean-depend info-am info dvi-am dvi check check-am \
+installcheck-am installcheck install-exec-am install-exec \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+
+####### kdevelop will overwrite this part!!! (end)############
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 3
+kiptablesudpport.moc.cpp: $(srcdir)/kiptablesudpport.h
+	$(MOC) $(srcdir)/kiptablesudpport.h -o kiptablesudpport.moc.cpp
+
+#>+ 3
+kiptablesaddnetwork.moc.cpp: $(srcdir)/kiptablesaddnetwork.h
+	$(MOC) $(srcdir)/kiptablesaddnetwork.h -o kiptablesaddnetwork.moc.cpp
+
+#>+ 3
+kiptablessettings.moc.cpp: $(srcdir)/kiptablessettings.h
+	$(MOC) $(srcdir)/kiptablessettings.h -o kiptablessettings.moc.cpp
+
+#>+ 3
+kiptablesaddhost.moc.cpp: $(srcdir)/kiptablesaddhost.h
+	$(MOC) $(srcdir)/kiptablesaddhost.h -o kiptablesaddhost.moc.cpp
+
+#>+ 3
+kiptablestcpport.moc.cpp: $(srcdir)/kiptablestcpport.h
+	$(MOC) $(srcdir)/kiptablestcpport.h -o kiptablestcpport.moc.cpp
+
+#>+ 3
+kiptablestcpports.moc.cpp: $(srcdir)/kiptablestcpports.h
+	$(MOC) $(srcdir)/kiptablestcpports.h -o kiptablestcpports.moc.cpp
+
+#>+ 3
+kiptablesmain.moc.cpp: $(srcdir)/kiptablesmain.h
+	$(MOC) $(srcdir)/kiptablesmain.h -o kiptablesmain.moc.cpp
+
+#>+ 67
+kiptablesudpportui.cpp: $(srcdir)/kiptablesudpportui.ui kiptablesudpportui.h kiptablesudpportui.moc
+	rm -f kiptablesudpportui.cpp
+	echo '#include <klocale.h>' > kiptablesudpportui.cpp
+	$(UIC) -tr i18n -i kiptablesudpportui.h $(srcdir)/kiptablesudpportui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablesudpportui.cpp || rm -f kiptablesudpportui.cpp
+	echo '#include "kiptablesudpportui.moc"' >> kiptablesudpportui.cpp
+
+kiptablesudpportui.h: $(srcdir)/kiptablesudpportui.ui
+	$(UIC) -o kiptablesudpportui.h $(srcdir)/kiptablesudpportui.ui
+
+kiptablesudpportui.moc: kiptablesudpportui.h
+	$(MOC) kiptablesudpportui.h -o kiptablesudpportui.moc
+kiptablestcpportui.cpp: $(srcdir)/kiptablestcpportui.ui kiptablestcpportui.h kiptablestcpportui.moc
+	rm -f kiptablestcpportui.cpp
+	echo '#include <klocale.h>' > kiptablestcpportui.cpp
+	$(UIC) -tr i18n -i kiptablestcpportui.h $(srcdir)/kiptablestcpportui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablestcpportui.cpp || rm -f kiptablestcpportui.cpp
+	echo '#include "kiptablestcpportui.moc"' >> kiptablestcpportui.cpp
+
+kiptablestcpportui.h: $(srcdir)/kiptablestcpportui.ui
+	$(UIC) -o kiptablestcpportui.h $(srcdir)/kiptablestcpportui.ui
+
+kiptablestcpportui.moc: kiptablestcpportui.h
+	$(MOC) kiptablestcpportui.h -o kiptablestcpportui.moc
+kiptablesaddnetworkui.cpp: $(srcdir)/kiptablesaddnetworkui.ui kiptablesaddnetworkui.h kiptablesaddnetworkui.moc
+	rm -f kiptablesaddnetworkui.cpp
+	echo '#include <klocale.h>' > kiptablesaddnetworkui.cpp
+	$(UIC) -tr i18n -i kiptablesaddnetworkui.h $(srcdir)/kiptablesaddnetworkui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablesaddnetworkui.cpp || rm -f kiptablesaddnetworkui.cpp
+	echo '#include "kiptablesaddnetworkui.moc"' >> kiptablesaddnetworkui.cpp
+
+kiptablesaddnetworkui.h: $(srcdir)/kiptablesaddnetworkui.ui
+	$(UIC) -o kiptablesaddnetworkui.h $(srcdir)/kiptablesaddnetworkui.ui
+
+kiptablesaddnetworkui.moc: kiptablesaddnetworkui.h
+	$(MOC) kiptablesaddnetworkui.h -o kiptablesaddnetworkui.moc
+kiptablesaddhostui.cpp: $(srcdir)/kiptablesaddhostui.ui kiptablesaddhostui.h kiptablesaddhostui.moc
+	rm -f kiptablesaddhostui.cpp
+	echo '#include <klocale.h>' > kiptablesaddhostui.cpp
+	$(UIC) -tr i18n -i kiptablesaddhostui.h $(srcdir)/kiptablesaddhostui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablesaddhostui.cpp || rm -f kiptablesaddhostui.cpp
+	echo '#include "kiptablesaddhostui.moc"' >> kiptablesaddhostui.cpp
+
+kiptablesaddhostui.h: $(srcdir)/kiptablesaddhostui.ui
+	$(UIC) -o kiptablesaddhostui.h $(srcdir)/kiptablesaddhostui.ui
+
+kiptablesaddhostui.moc: kiptablesaddhostui.h
+	$(MOC) kiptablesaddhostui.h -o kiptablesaddhostui.moc
+kiptablessettgingsui.cpp: $(srcdir)/kiptablessettgingsui.ui kiptablessettgingsui.h kiptablessettgingsui.moc
+	rm -f kiptablessettgingsui.cpp
+	echo '#include <klocale.h>' > kiptablessettgingsui.cpp
+	$(UIC) -tr i18n -i kiptablessettgingsui.h $(srcdir)/kiptablessettgingsui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablessettgingsui.cpp || rm -f kiptablessettgingsui.cpp
+	echo '#include "kiptablessettgingsui.moc"' >> kiptablessettgingsui.cpp
+
+kiptablessettgingsui.h: $(srcdir)/kiptablessettgingsui.ui
+	$(UIC) -o kiptablessettgingsui.h $(srcdir)/kiptablessettgingsui.ui
+
+kiptablessettgingsui.moc: kiptablessettgingsui.h
+	$(MOC) kiptablessettgingsui.h -o kiptablessettgingsui.moc
+kiptablesmainui.cpp: $(srcdir)/kiptablesmainui.ui kiptablesmainui.h kiptablesmainui.moc
+	rm -f kiptablesmainui.cpp
+	echo '#include <klocale.h>' > kiptablesmainui.cpp
+	$(UIC) -tr i18n -i kiptablesmainui.h $(srcdir)/kiptablesmainui.ui | sed -e "s,i18n( \"\" ),QString::null,g" >> kiptablesmainui.cpp || rm -f kiptablesmainui.cpp
+	echo '#include "kiptablesmainui.moc"' >> kiptablesmainui.cpp
+
+kiptablesmainui.h: $(srcdir)/kiptablesmainui.ui
+	$(UIC) -o kiptablesmainui.h $(srcdir)/kiptablesmainui.ui
+
+kiptablesmainui.moc: kiptablesmainui.h
+	$(MOC) kiptablesmainui.h -o kiptablesmainui.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  kiptablesudpport.moc.cpp kiptablesaddnetwork.moc.cpp kiptablessettings.moc.cpp kiptablesaddhost.moc.cpp kiptablestcpport.moc.cpp kiptablestcpports.moc.cpp kiptablesmain.moc.cpp
+
+#>+ 9
+clean-ui:
+	-rm -f \
+	kiptablesudpportui.cpp kiptablesudpportui.h kiptablesudpportui.moc \
+	kiptablestcpportui.cpp kiptablestcpportui.h kiptablestcpportui.moc \
+	kiptablesaddnetworkui.cpp kiptablesaddnetworkui.h kiptablesaddnetworkui.moc \
+	kiptablesaddhostui.cpp kiptablesaddhostui.h kiptablesaddhostui.moc \
+	kiptablessettgingsui.cpp kiptablessettgingsui.h kiptablessettgingsui.moc \
+	kiptablesmainui.cpp kiptablesmainui.h kiptablesmainui.moc 
+
+#>+ 2
+docs-am:
+
+#>+ 5
+force-reedit:
+		cd $(top_srcdir) && $(AUTOMAKE) --gnu kiptables/GUI/Makefile
+	cd $(top_srcdir) && perl admin/am_edit kiptables/GUI/Makefile.in
+
+
+#>+ 10
+libGUI_a_meta_unload.cpp:  kiptablesaddnetwork.moc.cpp kiptablesudpport.moc.cpp kiptablesmainui.moc kiptablestcpportui.moc kiptablestcpport.moc.cpp kiptablesudpportui.moc kiptablestcpports.moc.cpp kiptablessettgingsui.moc kiptablessettings.moc.cpp kiptablesaddhost.moc.cpp kiptablesaddnetworkui.moc kiptablesaddhostui.moc kiptablesmain.moc.cpp
+	@echo 'creating libGUI_a_meta_unload.cpp'
+	@-rm -f libGUI_a_meta_unload.cpp
+	@echo 'static const char * _metalist_libGUI_a[] = {' > libGUI_a_meta_unload.cpp
+	@cat  kiptablesaddnetwork.moc.cpp kiptablesudpport.moc.cpp kiptablesmainui.moc kiptablestcpportui.moc kiptablestcpport.moc.cpp kiptablesudpportui.moc kiptablestcpports.moc.cpp kiptablessettgingsui.moc kiptablessettings.moc.cpp kiptablesaddhost.moc.cpp kiptablesaddnetworkui.moc kiptablesaddhostui.moc kiptablesmain.moc.cpp | grep 'char.*className' | sed -e 's/.*[^A-Za-z0-9_:]\([A-Za-z0-9_:]*\)::className.*$$/\"\1\",/' | sort | uniq >> libGUI_a_meta_unload.cpp
+	@echo '0};' >> libGUI_a_meta_unload.cpp
+	@echo '#include <kunload.h>' >> libGUI_a_meta_unload.cpp
+	@echo '_UNLOAD(libGUI_a)' >> libGUI_a_meta_unload.cpp
+
+
+#>+ 3
+clean-moc-classes:
+	-rm -f  libGUI_a_meta_unload.cpp
+
+#>+ 11
+libGUI_a.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/kiptablesudpport.cpp $(srcdir)/kiptablestcpport.cpp $(srcdir)/kiptablesaddnetwork.cpp $(srcdir)/kiptablesaddhost.cpp $(srcdir)/kiptablessettings.cpp $(srcdir)/kiptablesmain.cpp kiptablesudpportui.cpp kiptablestcpportui.cpp kiptablesaddnetworkui.cpp kiptablesaddhostui.cpp kiptablessettgingsui.cpp kiptablesmainui.cpp libGUI_a_meta_unload.cpp  kiptablesudpport.moc.cpp kiptablesaddnetwork.moc.cpp kiptablessettings.moc.cpp kiptablesaddhost.moc.cpp kiptablestcpport.moc.cpp kiptablestcpports.moc.cpp kiptablesmain.moc.cpp kiptablesudpportui.moc kiptablestcpportui.moc kiptablesaddnetworkui.moc kiptablesaddhostui.moc kiptablessettgingsui.moc kiptablesmainui.moc
+	@echo 'creating libGUI_a.all_cpp.cpp ...'; \
+	rm -f libGUI_a.all_cpp.files libGUI_a.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> libGUI_a.all_cpp.final; \
+	for file in kiptablesudpport.cpp kiptablestcpport.cpp kiptablesaddnetwork.cpp kiptablesaddhost.cpp kiptablessettings.cpp kiptablesmain.cpp kiptablesudpportui.cpp kiptablestcpportui.cpp kiptablesaddnetworkui.cpp kiptablesaddhostui.cpp kiptablessettgingsui.cpp kiptablesmainui.cpp libGUI_a_meta_unload.cpp  kiptablesudpport.moc.cpp kiptablesaddnetwork.moc.cpp kiptablessettings.moc.cpp kiptablesaddhost.moc.cpp kiptablestcpport.moc.cpp kiptablestcpports.moc.cpp kiptablesmain.moc.cpp; do \
+	  echo "#include \"$$file\"" >> libGUI_a.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> libGUI_a.all_cpp.final; \
+	done; \
+	cat libGUI_a.all_cpp.final libGUI_a.all_cpp.files  > libGUI_a.all_cpp.cpp; \
+	rm -f libGUI_a.all_cpp.final libGUI_a.all_cpp.files
+
+#>+ 3
+clean-final:
+	-rm -f libGUI_a.all_cpp.cpp
+
+#>+ 2
+final:
+	$(MAKE) libGUI_a_OBJECTS="$(libGUI_a_final_OBJECTS)" all-am
+#>+ 2
+no-final:
+	$(MAKE) libGUI_a_OBJECTS="$(libGUI_a_nofinal_OBJECTS)" all-am
+#>+ 3
+cvs-clean:
+	$(MAKE) -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 7
+$(srcdir)/kiptablesaddnetwork.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 
+$(srcdir)/kiptablesmain.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 
+$(srcdir)/kiptablestcpport.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 
+$(srcdir)/kiptablesaddhost.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 
+$(srcdir)/kiptablessettings.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 
+$(srcdir)/kiptablesudpport.cpp: kiptablesudpportui.h kiptablestcpportui.h kiptablesaddnetworkui.h kiptablesaddhostui.h kiptablessettgingsui.h kiptablesmainui.h 

@@ -1,0 +1,8 @@
+Host sh.w4u.com;217.27.128.55
+Host jr.w4u.com;217.27.128.40
+Network net_128;217.27.128.0
+Network net_129;217.27.129.0
+TCPService HTTP;80
+UDPService DNS;53
+UDPService NTP;43
+;43

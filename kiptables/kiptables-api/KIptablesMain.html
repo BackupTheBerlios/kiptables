@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<TITLE>class KIptablesMain</TITLE>
+
+<META NAME="Generator" CONTENT="KDOC ">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#000099" alink= "#ffffff">
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+<TD>
+	<TABLE BORDER="0">
+		<TR><TD valign="top" align="left" cellspacing="10">
+		<h1>class KIptablesMain</h1>
+		</TD>
+		<TD valign="top" align="right" colspan="1">MainView
+ <small><A HREF="#longdesc">More...</A></small></TD></TR>
+	</TABLE>
+	<HR>
+	<TABLE BORDER="0">
+		<TR><TH>Definition</TH><TD><code>#include &lt;<A HREF="kiptables___GUI___kiptablesmain_h.html">kiptables/GUI/kiptablesmain.h</A>&gt;</code></TD></TR>
+<TR><TH>Inherits</TH><TD><A HREF="KIptablesMainUI.html">KIptablesMainUI</A> <small>[public ]</small></TD></TR>
+<TR><TH><A HREF="full-list-KIptablesMain.html">List of all Methods</A></TH></TR>
+	</TABLE>
+	</TD>
+<TD align="right"><TABLE BORDER="0"><TR><TD><small><A HREF="index-long.html">Annotated List</A></small></TD></TR>
+<TR><TD><small><A HREF="header-list.html">Files</A></small></TD></TR>
+<TR><TD><small><A HREF="all-globals.html">Globals</A></small></TD></TR>
+<TR><TD><small><A HREF="hier.html">Hierarchy</A></small></TD></TR>
+<TR><TD><small><A HREF="index.html">Index</A></small></TD></TR>
+</TABLE></TD></TR></TABLE>
+<h4>Public Methods</h4><ul><LI>&nbsp;<b><A HREF="#ref1">KIptablesMain</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qwidget.html">QWidget</A> *parent=0, const char *name=0) 
+</LI>
+<LI>&nbsp;<b><A HREF="#ref2">~KIptablesMain</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref3">addHostObject</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref4">addNetworkObject</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref5">addTCP</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref6">addUDP</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name) 
+</LI>
+</ul><h4>Signals</h4><ul><LI>void &nbsp;<b><A HREF="#ref23">clickedFWObject</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref26">FWObjectsSelChanged</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref27">rightMouseClicked</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int) 
+</LI>
+</ul><h4>Public Members</h4><ul><LI>KListViewItem * <b><A HREF="#ref25">mangleOUTPUT</A></b></LI>
+</ul><h4>Protected Slots</h4><ul><LI>virtual  void &nbsp;<b><A HREF="#ref24">slotlviewFWObjectsClicked</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref28">slotFWObjectsSelChanged</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref29">slotFWObjectsRightMouse</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int) 
+</LI>
+</ul><h4>Private Methods</h4><ul><LI>void &nbsp;<b><A HREF="#ref7">initFWObjects</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref8">initFWTables</A></b> () 
+</LI>
+</ul><h4>Private Members</h4><ul><LI>KListViewItem * <b><A HREF="#ref9">hostItem</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref10">networkItem</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref11">tcpServices</A></b></LI>
+<LI>KListViewItem* <b><A HREF="#ref12">udpServices</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref13">filter</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref14">mangle</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref15">filterINPUT</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref16">nat</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref17">filterOUTPUT</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref18">filterFORWARD</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref19">natPREROUTING</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref20">natPOSTROUTING</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref21">natOUTPUT</A></b></LI>
+<LI>KListViewItem * <b><A HREF="#ref22">manglePREROUTING</A></b></LI>
+</ul><HR><H2><A NAME="longdesc">Detailed Description</A></H2><p>MainView
+</p>
+<p></p>
+<A NAME="KIptablesMain"></A><A NAME="ref1"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>KIptablesMain</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qwidget.html">QWidget</A> *parent=0, const char *name=0)
+<br></td><td align="right"><h3><strong>KIptablesMain</strong></h3></td></tr></table><p></p><A NAME="~KIptablesMain"></A><A NAME="ref2"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>~KIptablesMain</strong> ()
+<br></td><td align="right"><h3><strong>~KIptablesMain</strong></h3></td></tr></table><p></p><A NAME="addHostObject"></A><A NAME="ref3"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addHostObject</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name)
+<br></td><td align="right"><h3><strong>addHostObject</strong></h3></td></tr></table><p></p><A NAME="addNetworkObject"></A><A NAME="ref4"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addNetworkObject</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name)
+<br></td><td align="right"><h3><strong>addNetworkObject</strong></h3></td></tr></table><p></p><A NAME="addTCP"></A><A NAME="ref5"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addTCP</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name)
+<br></td><td align="right"><h3><strong>addTCP</strong></h3></td></tr></table><p></p><A NAME="addUDP"></A><A NAME="ref6"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addUDP</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name)
+<br></td><td align="right"><h3><strong>addUDP</strong></h3></td></tr></table><p></p><A NAME="initFWObjects"></A><A NAME="ref7"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>initFWObjects</strong> ()
+<br></td><td align="right"><h3><strong>initFWObjects</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="initFWTables"></A><A NAME="ref8"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>initFWTables</strong> ()
+<br></td><td align="right"><h3><strong>initFWTables</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="hostItem"></A><A NAME="ref9"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>hostItem</strong>
+</td><td align="right"><h3><strong>hostItem</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="networkItem"></A><A NAME="ref10"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>networkItem</strong>
+</td><td align="right"><h3><strong>networkItem</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="tcpServices"></A><A NAME="ref11"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>tcpServices</strong>
+</td><td align="right"><h3><strong>tcpServices</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="udpServices"></A><A NAME="ref12"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A>*  <strong>udpServices</strong>
+</td><td align="right"><h3><strong>udpServices</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="filter"></A><A NAME="ref13"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>filter</strong>
+</td><td align="right"><h3><strong>filter</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="mangle"></A><A NAME="ref14"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>mangle</strong>
+</td><td align="right"><h3><strong>mangle</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="filterINPUT"></A><A NAME="ref15"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>filterINPUT</strong>
+</td><td align="right"><h3><strong>filterINPUT</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="nat"></A><A NAME="ref16"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>nat</strong>
+</td><td align="right"><h3><strong>nat</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="filterOUTPUT"></A><A NAME="ref17"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>filterOUTPUT</strong>
+</td><td align="right"><h3><strong>filterOUTPUT</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="filterFORWARD"></A><A NAME="ref18"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>filterFORWARD</strong>
+</td><td align="right"><h3><strong>filterFORWARD</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="natPREROUTING"></A><A NAME="ref19"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>natPREROUTING</strong>
+</td><td align="right"><h3><strong>natPREROUTING</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="natPOSTROUTING"></A><A NAME="ref20"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>natPOSTROUTING</strong>
+</td><td align="right"><h3><strong>natPOSTROUTING</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="natOUTPUT"></A><A NAME="ref21"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>natOUTPUT</strong>
+</td><td align="right"><h3><strong>natOUTPUT</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="manglePREROUTING"></A><A NAME="ref22"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>manglePREROUTING</strong>
+</td><td align="right"><h3><strong>manglePREROUTING</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="clickedFWObject"></A><A NAME="ref23"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>clickedFWObject</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>clickedFWObject</strong></h3></td></tr></table><p> <small>[signal]</small></p><A NAME="slotlviewFWObjectsClicked"></A><A NAME="ref24"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotlviewFWObjectsClicked</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>slotlviewFWObjectsClicked</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><p>Reimplemented from <A HREF="KIptablesMainUI.html#slotlviewFWObjectsClicked">KIptablesMainUI</A>.</p>
+<A NAME="mangleOUTPUT"></A><A NAME="ref25"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KListViewItem.html">KListViewItem</A> *  <strong>mangleOUTPUT</strong>
+</td><td align="right"><h3><strong>mangleOUTPUT</strong></h3></td></tr></table><p></p><A NAME="FWObjectsSelChanged"></A><A NAME="ref26"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>FWObjectsSelChanged</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>FWObjectsSelChanged</strong></h3></td></tr></table><p> <small>[signal]</small></p><A NAME="rightMouseClicked"></A><A NAME="ref27"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>rightMouseClicked</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int)
+<br></td><td align="right"><h3><strong>rightMouseClicked</strong></h3></td></tr></table><p> <small>[signal]</small></p><A NAME="slotFWObjectsSelChanged"></A><A NAME="ref28"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWObjectsSelChanged</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>slotFWObjectsSelChanged</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><p>Reimplemented from <A HREF="KIptablesMainUI.html#slotFWObjectsSelChanged">KIptablesMainUI</A>.</p>
+<A NAME="slotFWObjectsRightMouse"></A><A NAME="ref29"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWObjectsRightMouse</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int)
+<br></td><td align="right"><h3><strong>slotFWObjectsRightMouse</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><p>Reimplemented from <A HREF="KIptablesMainUI.html#slotFWObjectsRightMouse">KIptablesMainUI</A>.</p>
+<HR><UL><LI><i>Author</i>: Stephan Hermann
+  </LI><LI><i>Generated</i>: sh on home.sourcecode.de on Fri Nov 23 21:38:33 2001, using kdoc 2.0a53.</LI></UL></BODY></HTML>

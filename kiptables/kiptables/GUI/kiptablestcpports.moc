@@ -1,0 +1,73 @@
+/****************************************************************************
+** KIptablesTCPPortsUI meta object code from reading C++ file 'kiptablestcpports.h'
+**
+** Created: Thu Nov 22 13:25:04 2001
+**      by: The Qt MOC ($Id: kiptablestcpports.moc,v 1.1 2001/11/24 11:07:46 shermann Exp $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#define Q_MOC_OUTPUT_REVISION 9
+#elif Q_MOC_OUTPUT_REVISION != 9
+#error "Moc format conflict - please regenerate all moc files"
+#endif
+
+#include "kiptablestcpports.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+
+
+const char *KIptablesTCPPortsUI::className() const
+{
+    return "KIptablesTCPPortsUI";
+}
+
+QMetaObject *KIptablesTCPPortsUI::metaObj = 0;
+
+void KIptablesTCPPortsUI::initMetaObject()
+{
+    if ( metaObj )
+	return;
+    if ( qstrcmp(QDialog::className(), "QDialog") != 0 )
+	badSuperclassWarning("KIptablesTCPPortsUI","QDialog");
+    (void) staticMetaObject();
+}
+
+#ifndef QT_NO_TRANSLATION
+
+QString KIptablesTCPPortsUI::tr(const char* s)
+{
+    return qApp->translate( "KIptablesTCPPortsUI", s, 0 );
+}
+
+QString KIptablesTCPPortsUI::tr(const char* s, const char * c)
+{
+    return qApp->translate( "KIptablesTCPPortsUI", s, c );
+}
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KIptablesTCPPortsUI::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    (void) QDialog::staticMetaObject();
+#ifndef QT_NO_PROPERTIES
+#endif // QT_NO_PROPERTIES
+    QMetaData::Access *slot_tbl_access = 0;
+    metaObj = QMetaObject::new_metaobject(
+	"KIptablesTCPPortsUI", "QDialog",
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    metaObj->set_slot_access( slot_tbl_access );
+#ifndef QT_NO_PROPERTIES
+#endif // QT_NO_PROPERTIES
+    return metaObj;
+}

@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<TITLE>class KIptablesConfig</TITLE>
+
+<META NAME="Generator" CONTENT="KDOC ">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#000099" alink= "#ffffff">
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+<TD>
+	<TABLE BORDER="0">
+		<TR><TD valign="top" align="left" cellspacing="10">
+		<h1>class KIptablesConfig</h1>
+		</TD>
+		<TD valign="top" align="right" colspan="1">Configuration Class
+ <small><A HREF="#longdesc">More...</A></small></TD></TR>
+	</TABLE>
+	<HR>
+	<TABLE BORDER="0">
+		<TR><TH>Definition</TH><TD><code>#include &lt;<A HREF="kiptables___Logic___kiptablesconfig_h.html">kiptables/Logic/kiptablesconfig.h</A>&gt;</code></TD></TR>
+<TR><TH>Inherits</TH><TD><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qobject.html">QObject</A> <small>(qt)</small> <small>[public ]</small></TD></TR>
+<TR><TH><A HREF="full-list-KIptablesConfig.html">List of all Methods</A></TH></TR>
+	</TABLE>
+	</TD>
+<TD align="right"><TABLE BORDER="0"><TR><TD><small><A HREF="index-long.html">Annotated List</A></small></TD></TR>
+<TR><TD><small><A HREF="header-list.html">Files</A></small></TD></TR>
+<TR><TD><small><A HREF="all-globals.html">Globals</A></small></TD></TR>
+<TR><TD><small><A HREF="hier.html">Hierarchy</A></small></TD></TR>
+<TR><TD><small><A HREF="index.html">Index</A></small></TD></TR>
+</TABLE></TD></TR></TABLE>
+<h4>Public Methods</h4><ul><LI>&nbsp;<b><A HREF="#ref1">KIptablesConfig</A></b> () 
+</LI>
+<LI>&nbsp;<b><A HREF="#ref2">~KIptablesConfig</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref3">readConfig</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref4">writeConfig</A></b> () 
+</LI>
+<LI>const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> & &nbsp;<b><A HREF="#ref5">getIptablesBinary</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref6">setIptablesBinary</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &bin) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref7">addHost</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &ip) 
+</LI>
+<LI><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesHost.html">KIptablesHost</A>> * &nbsp;<b><A HREF="#ref8">getHostList</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref9">setMainView</A></b> (<A HREF="KIptablesMain.html">KIptablesMain</A> *main) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref10">addNetwork</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &address) 
+</LI>
+<LI><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesNetwork.html">KIptablesNetwork</A>> * &nbsp;<b><A HREF="#ref11">getNetworkList</A></b> () 
+</LI>
+<LI><A HREF="KIptablesHost.html">KIptablesHost</A> * &nbsp;<b><A HREF="#ref12">findHost</A></b> (const char *name) 
+</LI>
+<LI><A HREF="KIptablesNetwork.html">KIptablesNetwork</A> * &nbsp;<b><A HREF="#ref13">findNetwork</A></b> (const char *name) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref14">addUDP</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const int no) 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref15">addTCP</A></b> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const int no) 
+</LI>
+<LI><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesUDP.html">KIptablesUDP</A>> * &nbsp;<b><A HREF="#ref16">getUDPList</A></b> () 
+</LI>
+<LI><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesTCP.html">KIptablesTCP</A>> * &nbsp;<b><A HREF="#ref17">getTCPList</A></b> () 
+</LI>
+</ul><h4>Public Members</h4><ul><LI>QList<KIptablesHost> * <b><A HREF="#ref24">hostList</A></b></LI>
+</ul><h4>Private Methods</h4><ul><LI>void &nbsp;<b><A HREF="#ref25">readHostlist</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref26">writeHostlist</A></b> () 
+</LI>
+</ul><h4>Private Members</h4><ul><LI>KSimpleConfig * <b><A HREF="#ref18">simpleConfig</A></b></LI>
+<LI>QString <b><A HREF="#ref19">iptablesBinary</A></b></LI>
+<LI>KIptablesMain * <b><A HREF="#ref20">mainView</A></b></LI>
+<LI>QList<KIptablesNetwork> * <b><A HREF="#ref21">networkList</A></b></LI>
+<LI>QList<KIptablesTCP> * <b><A HREF="#ref22">tcpList</A></b></LI>
+<LI>QList<KIptablesUDP> * <b><A HREF="#ref23">udpList</A></b></LI>
+</ul><HR><H2><A NAME="longdesc">Detailed Description</A></H2><p>Configuration Class
+</p>
+<A NAME="KIptablesConfig"></A><A NAME="ref1"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>KIptablesConfig</strong> ()
+<br></td><td align="right"><h3><strong>KIptablesConfig</strong></h3></td></tr></table><p></p><A NAME="~KIptablesConfig"></A><A NAME="ref2"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>~KIptablesConfig</strong> ()
+<br></td><td align="right"><h3><strong>~KIptablesConfig</strong></h3></td></tr></table><p></p><A NAME="readConfig"></A><A NAME="ref3"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>readConfig</strong> ()
+<br></td><td align="right"><h3><strong>readConfig</strong></h3></td></tr></table><p></p><A NAME="writeConfig"></A><A NAME="ref4"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>writeConfig</strong> ()
+<br></td><td align="right"><h3><strong>writeConfig</strong></h3></td></tr></table><p></p><A NAME="getIptablesBinary"></A><A NAME="ref5"></A><table width="100%"><tr bgcolor="#eeeeee"><td>const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> & &nbsp;<strong>getIptablesBinary</strong> ()
+<br></td><td align="right"><h3><strong>getIptablesBinary</strong></h3></td></tr></table><p></p><A NAME="setIptablesBinary"></A><A NAME="ref6"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>setIptablesBinary</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &bin)
+<br></td><td align="right"><h3><strong>setIptablesBinary</strong></h3></td></tr></table><p></p><A NAME="addHost"></A><A NAME="ref7"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addHost</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &ip)
+<br></td><td align="right"><h3><strong>addHost</strong></h3></td></tr></table><p></p><A NAME="getHostList"></A><A NAME="ref8"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesHost.html">KIptablesHost</A>> * &nbsp;<strong>getHostList</strong> ()
+<br></td><td align="right"><h3><strong>getHostList</strong></h3></td></tr></table><p></p><A NAME="setMainView"></A><A NAME="ref9"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>setMainView</strong> (<A HREF="KIptablesMain.html">KIptablesMain</A> *main)
+<br></td><td align="right"><h3><strong>setMainView</strong></h3></td></tr></table><p></p><A NAME="addNetwork"></A><A NAME="ref10"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addNetwork</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &address)
+<br></td><td align="right"><h3><strong>addNetwork</strong></h3></td></tr></table><p></p><A NAME="getNetworkList"></A><A NAME="ref11"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesNetwork.html">KIptablesNetwork</A>> * &nbsp;<strong>getNetworkList</strong> ()
+<br></td><td align="right"><h3><strong>getNetworkList</strong></h3></td></tr></table><p></p><A NAME="findHost"></A><A NAME="ref12"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesHost.html">KIptablesHost</A> * &nbsp;<strong>findHost</strong> (const char *name)
+<br></td><td align="right"><h3><strong>findHost</strong></h3></td></tr></table><p></p><p> Find Host in Hostlist
+ </p>
+<A NAME="findNetwork"></A><A NAME="ref13"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesNetwork.html">KIptablesNetwork</A> * &nbsp;<strong>findNetwork</strong> (const char *name)
+<br></td><td align="right"><h3><strong>findNetwork</strong></h3></td></tr></table><p></p><A NAME="addUDP"></A><A NAME="ref14"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addUDP</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const int no)
+<br></td><td align="right"><h3><strong>addUDP</strong></h3></td></tr></table><p></p><A NAME="addTCP"></A><A NAME="ref15"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>addTCP</strong> (const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A> &name,const int no)
+<br></td><td align="right"><h3><strong>addTCP</strong></h3></td></tr></table><p></p><A NAME="getUDPList"></A><A NAME="ref16"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesUDP.html">KIptablesUDP</A>> * &nbsp;<strong>getUDPList</strong> ()
+<br></td><td align="right"><h3><strong>getUDPList</strong></h3></td></tr></table><p></p><A NAME="getTCPList"></A><A NAME="ref17"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesTCP.html">KIptablesTCP</A>> * &nbsp;<strong>getTCPList</strong> ()
+<br></td><td align="right"><h3><strong>getTCPList</strong></h3></td></tr></table><p></p><A NAME="simpleConfig"></A><A NAME="ref18"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdecore/KSimpleConfig.html">KSimpleConfig</A> *  <strong>simpleConfig</strong>
+</td><td align="right"><h3><strong>simpleConfig</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="iptablesBinary"></A><A NAME="ref19"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qstring.html">QString</A>  <strong>iptablesBinary</strong>
+</td><td align="right"><h3><strong>iptablesBinary</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="mainView"></A><A NAME="ref20"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesMain.html">KIptablesMain</A> *  <strong>mainView</strong>
+</td><td align="right"><h3><strong>mainView</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="networkList"></A><A NAME="ref21"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesNetwork.html">KIptablesNetwork</A>> *  <strong>networkList</strong>
+</td><td align="right"><h3><strong>networkList</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="tcpList"></A><A NAME="ref22"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesTCP.html">KIptablesTCP</A>> *  <strong>tcpList</strong>
+</td><td align="right"><h3><strong>tcpList</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="udpList"></A><A NAME="ref23"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesUDP.html">KIptablesUDP</A>> *  <strong>udpList</strong>
+</td><td align="right"><h3><strong>udpList</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="hostList"></A><A NAME="ref24"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlist.html">QList</A><<A HREF="KIptablesHost.html">KIptablesHost</A>> *  <strong>hostList</strong>
+</td><td align="right"><h3><strong>hostList</strong></h3></td></tr></table><p></p><A NAME="readHostlist"></A><A NAME="ref25"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>readHostlist</strong> ()
+<br></td><td align="right"><h3><strong>readHostlist</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="writeHostlist"></A><A NAME="ref26"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>writeHostlist</strong> ()
+<br></td><td align="right"><h3><strong>writeHostlist</strong></h3></td></tr></table><p> <small>[private]</small></p><HR><UL><LI><i>Author</i>: Stephan Hermann
+  </LI><LI><i>Generated</i>: sh on home.sourcecode.de on Fri Nov 23 21:38:33 2001, using kdoc 2.0a53.</LI></UL></BODY></HTML>

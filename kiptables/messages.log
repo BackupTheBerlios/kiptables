@@ -1,0 +1,5 @@
+./kiptables has *.rc or *.ui files, but not correct messages line
+gmake[2]: Wechsel in das Verzeichnis Verzeichnis »/home/sh/projekte/kiptables/kiptables«
+Öffnen der Datei »/usr/include/kde.pot« zum Lesen fehlgeschlagen: Datei oder Verzeichnis nicht gefunden
+gmake[2]: *** [messages] Fehler 1
+gmake[2]: Verlassen des Verzeichnisses Verzeichnis »/home/sh/projekte/kiptables/kiptables«

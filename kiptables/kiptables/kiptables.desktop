@@ -1,0 +1,12 @@
+# KDE Config File  
+[Desktop Entry]
+Type=Application
+Exec=kiptables -caption "%c" %i %m  
+Icon=kiptables.png
+MiniIcon=kiptables.png
+DocPath=kiptables/index.html
+Comment=
+Comment[de]=
+Terminal=0
+Name=Kiptables
+Name[de]=Kiptables

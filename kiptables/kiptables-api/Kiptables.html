@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>class Kiptables</TITLE>
+
+<META NAME="Generator" CONTENT="KDOC ">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#000099" alink= "#ffffff">
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+<TD>
+	<TABLE BORDER="0">
+		<TR><TD valign="top" align="left" cellspacing="10">
+		<h1>class Kiptables</h1>
+		</TD>
+		<TD valign="top" align="right" colspan="1">
+                                                                         *
+   This program is free software; you can redistribute it and/or modify  *
+   it under the terms of the GNU General Public License as published by  *
+   the Free Software Foundation; either version 2 of the License, or     *
+   (at your option) any later version. <small><A HREF="#longdesc">More...</A></small></TD></TR>
+	</TABLE>
+	<HR>
+	<TABLE BORDER="0">
+		<TR><TH>Definition</TH><TD><code>#include &lt;<A HREF="kiptables___kiptables_h.html">kiptables/kiptables.h</A>&gt;</code></TD></TR>
+<TR><TH>Inherits</TH><TD><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KTMainWindow.html">KTMainWindow</A> <small>(kdeui)</small> <small>[public ]</small></TD></TR>
+<TR><TH><A HREF="full-list-Kiptables.html">List of all Methods</A></TH></TR>
+	</TABLE>
+	</TD>
+<TD align="right"><TABLE BORDER="0"><TR><TD><small><A HREF="index-long.html">Annotated List</A></small></TD></TR>
+<TR><TD><small><A HREF="header-list.html">Files</A></small></TD></TR>
+<TR><TD><small><A HREF="all-globals.html">Globals</A></small></TD></TR>
+<TR><TD><small><A HREF="hier.html">Hierarchy</A></small></TD></TR>
+<TR><TD><small><A HREF="index.html">Index</A></small></TD></TR>
+</TABLE></TD></TR></TABLE>
+<h4>Public Methods</h4><ul><LI>&nbsp;<b><A HREF="#ref1">Kiptables</A></b> (const char *name=0,<A HREF="KIptablesConfig.html">KIptablesConfig</A> *config=0) 
+</LI>
+<LI>&nbsp;<b><A HREF="#ref2">~Kiptables</A></b> () 
+</LI>
+<LI><A HREF="KIptablesMain.html">KIptablesMain</A> * &nbsp;<b><A HREF="#ref3">getMainView</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref4">setConfig</A></b> (<A HREF="KIptablesConfig.html">KIptablesConfig</A> *config) 
+</LI>
+</ul><h4>Protected Slots</h4><ul><LI>virtual  void &nbsp;<b><A HREF="#ref8">slotSettings</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref9">quitApplication</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref21">slotFWAddHost</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref22">slotFWAddNetwork</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref23">itemClicked</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref24">slotFWAddTCPPort</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref25">slotFWAddUDPPort</A></b> () 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref26">FWObjectsSelChanged</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *) 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref27">slotRightMouseButtonClicked</A></b> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int) 
+</LI>
+<LI>virtual  void &nbsp;<b><A HREF="#ref28">slotFWModifyHost</A></b> () 
+</LI>
+</ul><h4>Private Methods</h4><ul><LI>void &nbsp;<b><A HREF="#ref5">initView</A></b> () 
+</LI>
+<LI>void &nbsp;<b><A HREF="#ref6">initActions</A></b> () 
+</LI>
+<LI><A HREF="KIptablesHost.html">KIptablesHost</A> *&nbsp;<b><A HREF="#ref7">updateHostEntry</A></b> (const char *name=0) 
+</LI>
+</ul><h4>Private Members</h4><ul><LI>KIptablesConfig * <b><A HREF="#ref10">iptablesConfig</A></b></LI>
+<LI>KAction * <b><A HREF="#ref11">settings</A></b></LI>
+<LI>KIptablesMain * <b><A HREF="#ref12">mainView</A></b></LI>
+<LI>KAction * <b><A HREF="#ref13">actionHost</A></b></LI>
+<LI>KAction * <b><A HREF="#ref14">actionNetwork</A></b></LI>
+<LI>KAction * <b><A HREF="#ref15">actionTCP</A></b></LI>
+<LI>KAction * <b><A HREF="#ref16">actionUDP</A></b></LI>
+<LI>KAction * <b><A HREF="#ref17">actionHostModify</A></b></LI>
+<LI>KAction * <b><A HREF="#ref18">actionHostDelete</A></b></LI>
+<LI>KAction * <b><A HREF="#ref19">actionNetworkModify</A></b></LI>
+<LI>KAction * <b><A HREF="#ref20">actionNetworkDelete</A></b></LI>
+</ul><HR><H2><A NAME="longdesc">Detailed Description</A></H2><p>
+                                                                         *
+   This program is free software; you can redistribute it and/or modify  *
+   it under the terms of the GNU General Public License as published by  *
+   the Free Software Foundation; either version 2 of the License, or     *
+   (at your option) any later version.                                   *
+                                                                         *
+*************************************************************************</p>
+<A NAME="Kiptables"></A><A NAME="ref1"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>Kiptables</strong> (const char *name=0,<A HREF="KIptablesConfig.html">KIptablesConfig</A> *config=0)
+<br></td><td align="right"><h3><strong>Kiptables</strong></h3></td></tr></table><p></p><A NAME="~Kiptables"></A><A NAME="ref2"></A><table width="100%"><tr bgcolor="#eeeeee"><td>&nbsp;<strong>~Kiptables</strong> ()
+<br></td><td align="right"><h3><strong>~Kiptables</strong></h3></td></tr></table><p></p><A NAME="getMainView"></A><A NAME="ref3"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesMain.html">KIptablesMain</A> * &nbsp;<strong>getMainView</strong> ()
+<br></td><td align="right"><h3><strong>getMainView</strong></h3></td></tr></table><p></p><A NAME="setConfig"></A><A NAME="ref4"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>setConfig</strong> (<A HREF="KIptablesConfig.html">KIptablesConfig</A> *config)
+<br></td><td align="right"><h3><strong>setConfig</strong></h3></td></tr></table><p></p><A NAME="initView"></A><A NAME="ref5"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>initView</strong> ()
+<br></td><td align="right"><h3><strong>initView</strong></h3></td></tr></table><p> <small>[private]</small></p><p> Initialize Main View
+ </p>
+<A NAME="initActions"></A><A NAME="ref6"></A><table width="100%"><tr bgcolor="#eeeeee"><td>void &nbsp;<strong>initActions</strong> ()
+<br></td><td align="right"><h3><strong>initActions</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="updateHostEntry"></A><A NAME="ref7"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesHost.html">KIptablesHost</A> *&nbsp;<strong>updateHostEntry</strong> (const char *name=0)
+<br></td><td align="right"><h3><strong>updateHostEntry</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="slotSettings"></A><A NAME="ref8"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotSettings</strong> ()
+<br></td><td align="right"><h3><strong>slotSettings</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="quitApplication"></A><A NAME="ref9"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>quitApplication</strong> ()
+<br></td><td align="right"><h3><strong>quitApplication</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="iptablesConfig"></A><A NAME="ref10"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesConfig.html">KIptablesConfig</A> *  <strong>iptablesConfig</strong>
+</td><td align="right"><h3><strong>iptablesConfig</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="settings"></A><A NAME="ref11"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>settings</strong>
+</td><td align="right"><h3><strong>settings</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="mainView"></A><A NAME="ref12"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="KIptablesMain.html">KIptablesMain</A> *  <strong>mainView</strong>
+</td><td align="right"><h3><strong>mainView</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionHost"></A><A NAME="ref13"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionHost</strong>
+</td><td align="right"><h3><strong>actionHost</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionNetwork"></A><A NAME="ref14"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionNetwork</strong>
+</td><td align="right"><h3><strong>actionNetwork</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionTCP"></A><A NAME="ref15"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionTCP</strong>
+</td><td align="right"><h3><strong>actionTCP</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionUDP"></A><A NAME="ref16"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionUDP</strong>
+</td><td align="right"><h3><strong>actionUDP</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionHostModify"></A><A NAME="ref17"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionHostModify</strong>
+</td><td align="right"><h3><strong>actionHostModify</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionHostDelete"></A><A NAME="ref18"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionHostDelete</strong>
+</td><td align="right"><h3><strong>actionHostDelete</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionNetworkModify"></A><A NAME="ref19"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionNetworkModify</strong>
+</td><td align="right"><h3><strong>actionNetworkModify</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="actionNetworkDelete"></A><A NAME="ref20"></A><table width="100%"><tr bgcolor="#eeeeee"><td><A HREF="../../../.kde/share/apps/kdevelop/KDE-Documentation/kdeui/KAction.html">KAction</A> *  <strong>actionNetworkDelete</strong>
+</td><td align="right"><h3><strong>actionNetworkDelete</strong></h3></td></tr></table><p> <small>[private]</small></p><A NAME="slotFWAddHost"></A><A NAME="ref21"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWAddHost</strong> ()
+<br></td><td align="right"><h3><strong>slotFWAddHost</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><p> global iptables configuration object
+ </p>
+<A NAME="slotFWAddNetwork"></A><A NAME="ref22"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWAddNetwork</strong> ()
+<br></td><td align="right"><h3><strong>slotFWAddNetwork</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="itemClicked"></A><A NAME="ref23"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>itemClicked</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>itemClicked</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="slotFWAddTCPPort"></A><A NAME="ref24"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWAddTCPPort</strong> ()
+<br></td><td align="right"><h3><strong>slotFWAddTCPPort</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="slotFWAddUDPPort"></A><A NAME="ref25"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWAddUDPPort</strong> ()
+<br></td><td align="right"><h3><strong>slotFWAddUDPPort</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="FWObjectsSelChanged"></A><A NAME="ref26"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>FWObjectsSelChanged</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *)
+<br></td><td align="right"><h3><strong>FWObjectsSelChanged</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="slotRightMouseButtonClicked"></A><A NAME="ref27"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotRightMouseButtonClicked</strong> (<A HREF="file:/usr/lib/qt-2.3.1/doc/html/qlistviewitem.html">QListViewItem</A> *,const <A HREF="file:/usr/lib/qt-2.3.1/doc/html/qpoint.html">QPoint</A> &,int)
+<br></td><td align="right"><h3><strong>slotRightMouseButtonClicked</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><A NAME="slotFWModifyHost"></A><A NAME="ref28"></A><table width="100%"><tr bgcolor="#eeeeee"><td> void &nbsp;<strong>slotFWModifyHost</strong> ()
+<br></td><td align="right"><h3><strong>slotFWModifyHost</strong></h3></td></tr></table><p> <small>[protected slots virtual slot]</small></p><HR>
+	<table>
+	<tr><td><small>Generated by: sh on home.sourcecode.de on Fri Nov 23 21:38:33 2001, using kdoc 2.0a53.</small></td></tr>
+	</table>
+</BODY>
+</HTML>

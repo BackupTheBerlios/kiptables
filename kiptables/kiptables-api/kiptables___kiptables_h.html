@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<TITLE>Source: kiptables/kiptables.h</TITLE>
+
+<META NAME="Generator" CONTENT="KDOC ">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#000099" alink= "#ffffff">
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+<TD>
+	<TABLE BORDER="0">
+		<TR><TD valign="top" align="left" cellspacing="10">
+		<h1>Source: kiptables/kiptables.h</h1>
+		</TD>
+		<TD valign="top" align="right" colspan="1"></TD></TR>
+	</TABLE>
+	<HR>
+	<TABLE BORDER="0">
+		
+	</TABLE>
+	</TD>
+<TD align="right"><TABLE BORDER="0"><TR><TD><small><A HREF="index-long.html">Annotated List</A></small></TD></TR>
+<TR><TD><small><A HREF="header-list.html">Files</A></small></TD></TR>
+<TR><TD><small><A HREF="all-globals.html">Globals</A></small></TD></TR>
+<TR><TD><small><A HREF="hier.html">Hierarchy</A></small></TD></TR>
+<TR><TD><small><A HREF="index.html">Index</A></small></TD></TR>
+</TABLE></TD></TR></TABLE>
+<pre>
+/***************************************************************************
+                          kiptables.h  -  description
+                             -------------------
+    begin                : Mit Nov 21 12:15:35 UTC 2001
+    copyright            : (C) 2001 by Stephan Hermann
+    email                : sh@sourcecode.de
+ ***************************************************************************/
+
+/***************************************************************************
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ ***************************************************************************/
+
+#ifndef KIPTABLES_H
+#define KIPTABLES_H
+
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
+#include <kapp.h>
+#include <qlist.h>
+#include <ktmainwindow.h>
+#include <kaction.h>
+#include <kstdaction.h>
+#include <klocale.h>
+#include "GUI/kiptablesmain.h"
+#include "GUI/kiptablessettings.h"
+#include "GUI/kiptablesaddhost.h"
+#include "GUI/kiptablesaddnetwork.h"
+#include "GUI/kiptablestcpport.h"
+#include "GUI/kiptablesudpport.h"
+#include "Logic/kiptablesconfig.h"
+#include "Logic/kiptableshost.h"
+#include "Logic/kiptablestcp.h"
+#include "Logic/kiptablesudp.h"
+
+/** Kiptables is the base class of the project */
+class Kiptables : public KTMainWindow
+{
+  Q_OBJECT 
+  public:
+    /** construtor */
+    Kiptables(const char *name=0,KIptablesConfig *config=0);
+    /** destructor */
+    ~Kiptables();
+  /** No descriptions */
+  KIptablesMain * getMainView();
+  /** No descriptions */
+  void setConfig(KIptablesConfig *config);
+private: // Private methods
+  /** Initialize Main View
+ */
+  void initView();
+  /** Initialize Actions */
+  void initActions();
+  /** No descriptions */
+KIptablesHost *updateHostEntry(const char *name=0);
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotSettings();
+protected slots: // Protected slots
+  /** Closes and Quits the Application */
+  virtual void quitApplication();
+private: // Private attributes
+  /** global iptables configuration object
+ */
+  KIptablesConfig * iptablesConfig;
+  /**  */
+  KAction * settings;
+  /**  */
+  KIptablesMain * mainView;
+  /**  */
+  KAction * actionHost;
+  /**  */
+  KAction * actionNetwork;
+  /**  */
+  KAction * actionTCP;
+  /**  */
+  KAction * actionUDP;
+  /**  */
+  KAction * actionHostModify;
+  /**  */
+  KAction * actionHostDelete;
+  /**  */
+  KAction * actionNetworkModify;
+  /**  */
+  KAction * actionNetworkDelete;
+protected slots: // Protected slots
+  /** Update StatusBar */
+//Del von KDevelop:
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotFWAddHost();
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotFWAddNetwork();
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void itemClicked(QListViewItem *);
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotFWAddTCPPort();
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotFWAddUDPPort();
+protected slots: // Protected slots
+  /** No descriptions */
+
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void FWObjectsSelChanged(QListViewItem *);
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotRightMouseButtonClicked(QListViewItem *,const QPoint &,int);
+protected slots: // Protected slots
+  /** No descriptions */
+  virtual void slotFWModifyHost();
+protected slots: // Protected slots
+  /** No descriptions */
+
+};
+
+#endif
+</pre>
+<HR>
+	<table>
+	<tr><td><small>Generated by: sh on home.sourcecode.de on Fri Nov 23 21:38:33 2001, using kdoc 2.0a53.</small></td></tr>
+	</table>
+</BODY>
+</HTML>
